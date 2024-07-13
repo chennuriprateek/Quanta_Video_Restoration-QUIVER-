@@ -9,9 +9,7 @@ place holder, please change to actuall link
 ## 🧩 Dataset and Pre-train Models
 | Datasets | Pre-train Models |
 |:-----: |:-----: |
-| [I2_2000FPS](https://www.google.com/) | [Pretrained restoration model](https://www.google.com/) |
-
-place holder, please change to actuall link
+| [I2_2000FPS](https://app.box.com/s/0yzzajq1pnhyya057ilerzjia4qtsvhc) | [Pretrained restoration model (Coming Soon)](https://www.google.com/) |
 
 ## 🔑 Setup and Prepare LMDB files
 ```
