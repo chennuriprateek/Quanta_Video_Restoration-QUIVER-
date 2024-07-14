@@ -1,0 +1,9 @@
+
+*.pyc
+*.py
+*.cu
+*.cpp
+*.css
+*.jpg
+*.html
+*.js
