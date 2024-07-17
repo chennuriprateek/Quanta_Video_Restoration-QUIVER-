@@ -4,7 +4,6 @@
 </div>
 
 ## [🔥 Project Page](https://chennuriprateek.github.io/Quanta_Video_Restoration-QUIVER-/) | [Paper (coming soon)](https://scholar.google.com/) 
-place holder, please change to actuall link
 
 ## 🧩 Dataset and Pre-train Models
 | Datasets | Pre-train Models |
