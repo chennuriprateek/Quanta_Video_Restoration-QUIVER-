@@ -34,6 +34,19 @@
   </tr>
 </table>
 
+## Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{chennuri2025quanta,
+  author={Chennuri, Prateek and Chi, Yiheng and Jiang, Enze and Godaliyadda, G.M. and Gnanasambandam, Abhiram and Sheikh, Hamid R. and Gyongy, Istvan and Chan, Stanley H.},
+  title={Quanta Video Restoration},
+  booktitle={European Conference on Computer Vision},
+  pages={152--171},
+  year={2025},
+  organization={Springer}
+}
 <!---               
 ## 🔑 Setup and Prepare LMDB files
 ```
