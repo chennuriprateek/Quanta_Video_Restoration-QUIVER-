@@ -3,7 +3,7 @@
 # 【ECCV'2024🔥】Quanta Video Restoration
 </div>
 
-## [🔥 Project Page](https://chennuriprateek.github.io/Quanta_Video_Restoration-QUIVER-/) | [Paper (coming soon)](https://scholar.google.com/) 
+## [🔥 Project Page](https://chennuriprateek.github.io/Quanta_Video_Restoration-QUIVER-/) | [Paper](https://arxiv.org/pdf/2410.14994) 
 
 ## 🧩 Dataset and Pre-train Models
 | Datasets | Pre-train Models |
