@@ -3,7 +3,17 @@
 # 【ECCV'2024🔥】Quanta Video Restoration
 </div>
 
+## Overview
+QUIVER (Quanta Video Restoration) is a deep learning-based framework for restoring quanta video data. The project focuses on enhancing extreme low-light and high-speed imaging through advanced post-processing techniques.
+
+
 ## [🔥 Project Page](https://chennuriprateek.github.io/Quanta_Video_Restoration-QUIVER-/) | [Paper](https://arxiv.org/pdf/2410.14994) 
+
+## Features
+- Model checkpoints trained on simulated data
+- Optical flow extraction and processing
+- Patch-based training for efficient learning
+- Post-processing using MATLAB’s `localtonemap` function
 
 ## 🧩 Dataset and Pre-train Models
 <table>
@@ -55,6 +65,70 @@
     <td><a href="https://app.box.com/s/l1pwy8yn0semjbssxdl18jbolx8uqlbl">Link</a></td>
   </tr>
 </table>
+
+## Installation
+### Creating the Conda Environment
+To set up the environment, run the following command:
+```sh
+conda env create -f QUIVER_environment.yml
+```
+
+## Model Checkpoints
+- All model checkpoints are trained on simulated data.
+- Checkpoints are named using the following convention:
+  ```
+  [model_name]_[past_frames(p)][#past_frames]_[future_frames(f)][#future_frames]_[#photons_per_pixel_per_frame]PPP.pth
+  ```
+  - **Total input frames**: `p + f + 1`
+
+## Code Structure
+The repository is organized into the following scripts:
+
+### 1. `dataloader.py`
+- Loads data directly from MP4 videos.
+- Contains details on the simulation used for training.
+
+### 2. `model.py` & `archs.py`
+- Defines the model architecture and related modules.
+
+### 3. `input_args.py`
+- Contains hyperparameters controlling training and testing:
+  - `Num_frames`: Number of frames used as input to the model.
+  - `Patch_size`: Patch size for training.
+  - `Future_frames`: Number of frames to the right of the reference frame.
+  - `Past_frames`: Number of frames to the left of the reference frame.
+  - `Weights_dir`: Checkpoint path.
+  - `Load_model_flag`: Boolean flag to load model checkpoints.
+  - `Lr`: Learning rate.
+  - `Batch_size`: Batch size during training (default batch size for testing is 1).
+  - `save_path`: Directory to save outputs during testing.
+
+### 4. `test.py`
+- Run the following command for testing:
+  ```sh
+  python test.py
+  ```
+
+### 5. `train.py`
+- Run the following command for training:
+  ```sh
+  python train.py
+  ```
+
+## Post-Processing
+- After generating outputs, post-processing is done using MATLAB’s `localtonemap` function.
+- The same post-processing is applied to all baseline models.
+
+## Contact
+For any questions or clarifications, feel free to reach out.
+
+---
+
+This README provides a structured guide to installing, training, and testing QUIVER. Let me know if you'd like any modifications!
+
+
+
+
 
 ## Citation
 
