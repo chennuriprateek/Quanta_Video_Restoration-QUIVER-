@@ -13,7 +13,6 @@ QUIVER (Quanta Video Restoration) is a deep learning-based framework for restori
 - Model checkpoints trained on simulated data
 - Optical flow extraction and processing
 - Patch-based training for efficient learning
-- Post-processing using MATLAB’s `localtonemap` function
 
 ## 🧩 Dataset and Pre-train Models
 <table>
@@ -79,7 +78,7 @@ conda env create -f QUIVER_environment.yml
   ```
   [model_name]_[past_frames(p)][#past_frames]_[future_frames(f)][#future_frames]_[#photons_per_pixel_per_frame]PPP.pth
   ```
-  - **Total input frames**: `p + f + 1`
+  - **Total input frames**: `#past_frames + #future_frames + 1`
 
 ## Code Structure
 The repository is organized into the following scripts:
@@ -93,14 +92,14 @@ The repository is organized into the following scripts:
 
 ### 3. `input_args.py`
 - Contains hyperparameters controlling training and testing:
-  - `Num_frames`: Number of frames used as input to the model.
-  - `Patch_size`: Patch size for training.
-  - `Future_frames`: Number of frames to the right of the reference frame.
-  - `Past_frames`: Number of frames to the left of the reference frame.
-  - `Weights_dir`: Checkpoint path.
-  - `Load_model_flag`: Boolean flag to load model checkpoints.
-  - `Lr`: Learning rate.
-  - `Batch_size`: Batch size during training (default batch size for testing is 1).
+  - `num_frames`: Number of frames used as input to the model.
+  - `patch_size`: Patch size for training.
+  - `future_frames`: Number of frames to the right of the reference frame.
+  - `past_frames`: Number of frames to the left of the reference frame.
+  - `weights_dir`: Checkpoint path.
+  - `load_model_flag`: Boolean flag to load model checkpoints.
+  - `lr`: Learning rate.
+  - `batch_size`: Batch size during training (default batch size for testing is 1).
   - `save_path`: Directory to save outputs during testing.
 
 ### 4. `test.py`
@@ -117,7 +116,7 @@ The repository is organized into the following scripts:
 
 ## Post-Processing
 - After generating outputs, post-processing is done using MATLAB’s `localtonemap` function.
-- The same post-processing is applied to all baseline models.
+- The same post-processing is applied to all models including the baselines.
 
 ## Contact
 For any questions or clarifications, feel free to reach out.
