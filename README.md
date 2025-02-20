@@ -103,13 +103,13 @@ The repository is organized into the following scripts:
   - `save_path`: Directory to save outputs during testing.
 
 ### 4. `test.py`
-- Run the following command for testing:
+- Modify the input hyperparameters mentioned above and run the following command for testing:
   ```sh
   python test.py
   ```
 
 ### 5. `train.py`
-- Run the following command for training:
+- Modify the input hyperparameters mentioned above and run the following command for training:
   ```sh
   python train.py
   ```
