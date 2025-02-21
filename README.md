@@ -134,13 +134,14 @@ This README provides a structured guide to installing, training, and testing QUI
 If you find this work useful in your research, please consider citing:
 
 ```bibtex
-@inproceedings{chennuri2025quanta,
-  author={Chennuri, Prateek and Chi, Yiheng and Jiang, Enze and Godaliyadda, G.M. and Gnanasambandam, Abhiram and Sheikh, Hamid R. and Gyongy, Istvan and Chan, Stanley H.},
+@inproceedings{chennuri2024quanta,
   title={Quanta Video Restoration},
+  author={Chennuri, Prateek and Chi, Yiheng and Jiang, Enze and Godaliyadda, GM Dilshan and Gnanasambandam, Abhiram and Sheikh, Hamid R and Gyongy, Istvan and Chan, Stanley H},
   booktitle={European Conference on Computer Vision},
   pages={152--171},
-  year={2025},
+  year={2024},
   organization={Springer}
+}
 }
 ```
 <!---               
